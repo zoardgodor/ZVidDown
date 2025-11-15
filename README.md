@@ -23,7 +23,7 @@ This is a simple graphical video downloader application that allows you to downl
 
 ### 1. Pre-built Version (Recommended)
 
-If you don't want to install anything, use the included `ZVidDown.exe` or the upcoming `ZVidDown_installer.exe` file.
+If you don't want to install anything, use the included `ZVidDown.exe` or for system-level installation, use the `ZVidDown_installer.exe` file.
 
 1. Download `ZVidDown.exe` or `ZVidDown_installer.exe`.
 2. Run the file (for the installer, follow the instructions).
