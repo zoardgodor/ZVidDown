@@ -23,7 +23,7 @@ Ez egy egyszerű, grafikus felületű videóletöltő alkalmazás, amellyel YouT
 
 ### 1. Előre lefordított verzió (ajánlott)
 
-Ha nem szeretnél semmit telepíteni, használd a mellékelt `ZVidDown.exe` vagy a jövőben elérhető `ZVidDown_installer.exe` fájlt.
+Ha nem szeretnél semmit telepíteni, használd a mellékelt `ZVidDown.exe` vagy a rendszerszintű telepítéshez a `ZVidDown_installer.exe` fájlt.
 
 1. Töltsd le a `ZVidDown.exe`-t vagy a `ZVidDown_installer.exe`-t.
 2. Futtasd a fájlt (telepítő esetén kövesd az utasításokat).
