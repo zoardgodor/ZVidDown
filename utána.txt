@@ -1,6 +1,0 @@
-Köszönöjük hogy a ZVidDown-t választotta!
-
-További információért, és a forráskód
-megtekintésére tekintse meg ezt a weboldalt: https://github.com/zpro11/ZVidDown
-
-Köszönettel: Gódor Zoárd a ZVidDown fejlesztője
