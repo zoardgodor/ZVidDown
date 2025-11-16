@@ -10,7 +10,7 @@ This is a simple graphical video downloader application that allows you to downl
 - Resolution selection (available options)
 - Choose output folder
 - Download progress display
-- Wide website support (YouTube, Videa, etc.)
+- Broad website support (YouTube, Videa, etc.)
 
 ## Technologies
 
@@ -21,15 +21,31 @@ This is a simple graphical video downloader application that allows you to downl
 
 ## Installation and Usage
 
-### 1. Pre-built Version (Recommended)
+### 1. Pre-built version (recommended)
 
-If you don't want to install anything, use the included `ZVidDown.exe` or for system-level installation, use the `ZVidDown_installer.exe` file.
+Find the latest version here: https://github.com/zpro11/ZVidDown/releases
 
-1. Download `ZVidDown.exe` or `ZVidDown_installer.exe`.
-2. Run the file (for the installer, follow the instructions).
-3. You do not need to install ffmpeg.exe and ffprobe.exe for ZVidDown.exe (or the installer), as they are bundled inside the exe and the program can access them internally. For main.py, these files must be present in the same folder as main.py.
+1. Download `ZVidDown.zip` or `ZVidDown_installer.exe`.
+2. For the ZIP, extract the archive and run the program (for the installer, follow the instructions).
+3. For ZVidDown.exe (and the installer), you do not need to install ffmpeg.exe and ffprobe.exe separately, as they are bundled with the exe and accessible by the program. However, if you want to run main.py directly, these files must be in the same folder as main.py.
 
-### 2. Build Your Own (For Developers)
+### 2. Running main.py
+
+Requirements:
+- Python 3
+- pip package manager
+
+Install the required packages:
+```sh
+pip install yt-dlp
+```
+
+Run main.py:
+```sh
+python main.py
+```
+
+### 3. Building your own executable (for developers)
 
 Requirements:
 - Python 3
@@ -43,7 +59,7 @@ pip install yt-dlp
 pip install pyinstaller
 ```
 
-Then build the exe with the following command (see `make_exe.txt`):
+Then create the exe with the following command (see `make_exe.txt`):
 ```sh
 pyinstaller --onefile --noconsole --icon=icon.ico --noupx --add-binary "ffmpeg.exe;." --add-binary "ffprobe.exe;." main.py
 ```
@@ -59,14 +75,22 @@ The executable will be in the `dist` folder.
 5. Set the output folder.
 6. Click the Download button.
 
-## Multilanguage (Language Selection)
+## License
+See: LICENSE.txt
+BY INSTALLING AND USING THE PROGRAM, YOU ACCEPT THE LICENSE AGREEMENT.
+
+## Multilingual Support (Language Selection)
 
 The program supports multiple languages. By default, you can choose between English and Hungarian.
 
-You can select the language in the three-dot (⋮) menu at the top right, under the "Language" menu. The selected language will be saved and remembered after restarting the program.
+You can select the language in the menu at the top right corner (⋮), under the "Language" menu. The selected language will be saved and remembered after restarting the program.
 
-### Adding or Using More Languages
+### Adding or Using Custom Languages
 
 If you want to add/use more languages, download the `more_languages.json` file and place it in the same folder as `main.py` or `ZVidDown.exe`. (The ZVidDown_installer automatically installs the more_languages.json file into the program folder.)
 
 If this file is present, the program will automatically offer the languages listed in it in the menu. If not, only the default English and Hungarian will be available.
+
+The 'more_languages.json' file can be expanded independently.
+
+**Created by Zoárd Gódor, developer of ZLockCore**

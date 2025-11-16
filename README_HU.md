@@ -23,13 +23,29 @@ Ez egy egyszerű, grafikus felületű videóletöltő alkalmazás, amellyel YouT
 
 ### 1. Előre lefordított verzió (ajánlott)
 
-Ha nem szeretnél semmit telepíteni, használd a mellékelt `ZVidDown.exe` vagy a rendszerszintű telepítéshez a `ZVidDown_installer.exe` fájlt.
+Keresd meg a legfrisseb verziót a következő weboldalon: https://github.com/zpro11/ZVidDown/releases
 
-1. Töltsd le a `ZVidDown.exe`-t vagy a `ZVidDown_installer.exe`-t.
-2. Futtasd a fájlt (telepítő esetén kövesd az utasításokat).
-3. Az ffmpeg.exe és az ffprobe.exe a ZvidDown.exe-nél (sem az installer-nél) nem kell őket telepíteni, mert az exe-be be van csomagolva, és a program magából eléri. de a main.py nél ott kell ezeknek lennie abban a mappában ahol a main.py. van
+1. Töltsd le a `ZVidDown.zip`-et vagy a `ZVidDown_installer.exe`-t.
+2. A ZIP esetén bonsd ki a tömörített archívumot, és futtasd (telepítő esetén kövesd az utasításokat).
+3. Az ffmpeg.exe és az ffprobe.exe a ZvidDown.exe-nél (sem az installer-nél) nem kell őket külön telepíteni, mert az exe-hez be van csomagolva, és a program eléri. de ha nyersen a main.py-t szeretnéd tuttatni, ott ezeknek abban a mappában kell lennie ahol a main.py van.
 
-### 2. Saját build készítése (fejlesztőknek)
+### 2. main.py futtatása
+
+Szükséges:
+- Python 3
+- pip csomagkezelő
+
+Telepítsd a szükséges csomagokat:
+```sh
+pip install yt-dlp
+```
+
+Futtasd a main.py-t:
+```sh
+python main.py
+```
+
+### 3. Saját build készítése (fejlesztőknek)
 
 Szükséges:
 - Python 3
@@ -59,6 +75,10 @@ Az elkészült futtatható fájl a `dist` mappában lesz.
 5. Állítsd be a kimeneti mappát.
 6. Kattints a Letöltés gombra.
 
+## Licenc
+Lásd: LICENSE.txt
+A PROGRAM TELEPÍTÉSÉVEL ÉS HASZNÁLATÁVAL ELOGADJA A LICENCSZERZŐDÉST.
+
 ## Többnyelvűség (nyelvválasztás)
 
 A program több nyelvet is támogat. Alapértelmezés szerint angol és magyar nyelv közül lehet választani.
@@ -70,3 +90,7 @@ Nyelvet a jobb felső sarokban található hárompontos (⋮) menüben, a "Langu
 Ha szeretnél további nyelveket hozzáadni/használni, tölsd le a `more_languages.json` nevű fájlt, és rakd abba a mappába, ahol a `main.py` vagy a `ZVidDown.exe` található. (A ZVidDown_installer automatikusan telepíti a more_laungages.json fájlt a program mappájába)
 
 Ha ez a fájl jelen van, a program automatikusan felkínálja a benne szereplő nyelveket is a menüben. Ha nincs, akkor csak az alapértelmezett angol és magyar közül lehet választani.
+
+A 'more_laungages.json' akár önnállóan is bővíthető.
+
+**Készítette: Gódor Zoárd a ZLockCore fejlesztője**
