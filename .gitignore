@@ -1,3 +1,7 @@
 .venv/
 build/
 main.spec
+ffmpeg-8.0.1-essentials_build/
+.gitignore
+__pycache__/
+ffmpeg-8.0.1-essentials_build.zip

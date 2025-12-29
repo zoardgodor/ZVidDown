@@ -95,4 +95,13 @@ If this file is present, the program will automatically offer the languages list
 
 The 'more_languages.json' file can be expanded independently.
 
+## Latest Features and Changes
+
+- Manual selection is now required for both video and audio quality before downloading. If you do not select a quality, a dialog will appear with two options: OK (cancel download) or Continue with default values (downloads with bestvideo+bestaudio).
+- The audio quality (bitrate/format) can be selected separately, not just the video resolution.
+- All interface texts, warnings, and dialog messages are now fully translatable. The more_languages.json file supports all new texts.
+- If you do not select a video or audio quality, the program will not start the download automatically, but will give feedback and let you choose how to proceed.
+- Improved error handling and user feedback for missing or invalid selections.
+- The language system and more_languages.json have been expanded to cover all new interface elements and messages.
+
 **Created by Zoárd Gódor, developer of ZLockCore**

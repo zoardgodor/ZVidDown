@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>ZVidDown – Video Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px;
+            background: #020617;
+        }
+
+        nav button {
+            background: none;
+            border: 1px solid #2563eb;
+            color: #e5e7eb;
+            padding: 6px 12px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        nav button:hover {
+            background: #2563eb;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            color: #93c5fd;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 10px;
+            padding: 12px 20px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .buttons a:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+
+        .lang {
+            display: none;
+        }
+
+        .lang.active {
+            display: block;
+        }
+
+        code {
+            background: #020617;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <button onclick="setLang('hu')">Magyar</button>
+    <button onclick="setLang('en')">English</button>
+</nav>
+
+<header>
+    <h1>ZVidDown</h1>
+    <p>Video Downloader – egyszerű, gyors és hatékony</p>
+</header>
+
+<main>
+
+    <!-- MAGYAR -->
+    <div id="hu" class="lang active">
+
+        <section>
+            <h2>Mi az a ZVidDown?</h2>
+            <p>
+                A <strong>ZVidDown</strong> egy egyszerű, grafikus felületű videóletöltő alkalmazás,
+                amellyel YouTube-ról és más támogatott weboldalakról tölthetsz le
+                videót, hangot vagy csak videót.
+            </p>
+        </section>
+
+        <section>
+            <h2>Fő funkciók</h2>
+            <ul>
+                <li>Videó + hang letöltése</li>
+                <li>Csak hang (MP3) letöltése</li>
+                <li>Csak videó letöltése</li>
+                <li>Felbontás kiválasztása (ha elérhető)</li>
+                <li>Kimeneti mappa megadása</li>
+                <li>Letöltési folyamat kijelzése</li>
+                <li>Széles körű oldal támogatás (YouTube, Videa, stb.)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technológiák</h2>
+            <ul>
+                <li>Python 3</li>
+                <li>Tkinter (GUI)</li>
+                <li>yt-dlp</li>
+                <li>ffmpeg, ffprobe</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Letöltés és dokumentáció</h2>
+            <div class="buttons">
+                <a href="https://github.com/zpro11/ZVidDown/releases" target="_blank">Letöltés (Releases)</a>
+                <a href="https://github.com/zpro11/ZVidDown" target="_blank">GitHub / README</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Többnyelvűség</h2>
+            <p>
+                A program alapértelmezetten magyar és angol nyelvet támogat.
+                További nyelvek a <code>more_languages.json</code> fájl segítségével adhatók hozzá.
+            </p>
+        </section>
+
+    </div>
+
+    <!-- ENGLISH -->
+    <div id="en" class="lang">
+
+        <section>
+            <h2>What is ZVidDown?</h2>
+            <p>
+                <strong>ZVidDown</strong> is a simple graphical video downloader application
+                that allows you to download video, audio, or video-only content
+                from YouTube and other supported websites.
+            </p>
+        </section>
+
+        <section>
+            <h2>Main Features</h2>
+            <ul>
+                <li>Download video + audio</li>
+                <li>Download audio only (MP3)</li>
+                <li>Download video only</li>
+                <li>Resolution selection (if available)</li>
+                <li>Choose output folder</li>
+                <li>Download progress display</li>
+                <li>Broad website support (YouTube, Videa, etc.)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Technologies</h2>
+            <ul>
+                <li>Python 3</li>
+                <li>Tkinter (GUI)</li>
+                <li>yt-dlp</li>
+                <li>ffmpeg, ffprobe</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Download & Documentation</h2>
+            <div class="buttons">
+                <a href="https://github.com/zpro11/ZVidDown/releases" target="_blank">Download (Releases)</a>
+                <a href="https://github.com/zpro11/ZVidDown" target="_blank">GitHub / README</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Multilingual Support</h2>
+            <p>
+                The program supports English and Hungarian by default.
+                Additional languages can be added using the <code>more_languages.json</code> file.
+            </p>
+        </section>
+
+    </div>
+
+</main>
+
+<footer>
+    © ZVidDown – Created by Gódor Zoárd, developer of ZLockCore
+</footer>
+
+<script>
+    function setLang(lang) {
+        document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+        document.getElementById(lang).classList.add('active');
+        document.documentElement.lang = lang;
+    }
+</script>
+
+</body>
+</html>

@@ -95,4 +95,13 @@ Ha ez a fájl jelen van, a program automatikusan felkínálja a benne szereplő 
 
 A 'more_laungages.json' akár önnállóan is bővíthető.
 
+## Változások
+
+- Letöltés előtt kötelező manuálisan kiválasztani a videó és a hang minőségét. Ha valamelyik nincs kiválasztva, egy ablak jelenik meg két opcióval: OK (megszakítja a letöltést) vagy Tovább alapértelmezett értékekkel (bestvideo+bestaudio letöltése).
+- A hangminőség (bitráta/formátum) is külön választható, nem csak a videó felbontás.
+- Minden felirat, figyelmeztetés és ablaküzenet teljesen fordítható. A more_languages.json minden új szöveget támogat.
+- Ha nincs kiválasztva videó vagy hang minőség, a program nem indul el automatikusan, hanem visszajelzést ad és lehetőséget ad a döntésre.
+- Fejlettebb hibakezelés és felhasználói visszajelzés hiányzó vagy hibás választás esetén.
+- A nyelvi rendszer és a more_languages.json minden új felület- és üzenetelemre kiterjed.
+
 **Készítette: Gódor Zoárd a ZLockCore fejlesztője**
