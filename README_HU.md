@@ -23,7 +23,7 @@ Ez egy egyszerű, grafikus felületű videóletöltő alkalmazás, amellyel YouT
 
 ### 1. Előre lefordított verzió (ajánlott)
 
-Keresd meg a legfrisseb verziót a következő weboldalon: https://github.com/zpro11/ZVidDown/releases
+Keresd meg a legfrisseb verziót a következő weboldalon: https://github.com/zoardgodor/ZVidDown/releases
 
 1. Töltsd le a `ZVidDown.zip`-et vagy a `ZVidDown_installer.exe`-t.
 2. A ZIP esetén bonsd ki a tömörített archívumot, és futtasd (telepítő esetén kövesd az utasításokat).

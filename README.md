@@ -23,7 +23,7 @@ This is a simple graphical video downloader application that allows you to downl
 
 ### 1. Pre-built version (recommended)
 
-Find the latest version here: https://github.com/zpro11/ZVidDown/releases
+Find the latest version here: https://github.com/zoardgodor/ZVidDown/releases
 
 1. Download `ZVidDown.zip` or `ZVidDown_installer.exe`.
 2. For the ZIP, extract the archive and run the program (for the installer, follow the instructions).
