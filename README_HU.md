@@ -89,7 +89,7 @@ Nyelvet a jobb felső sarokban található hárompontos (⋮) menüben, a "Langu
 
 ### Saját vagy további nyelvek hozzáadása
 
-Ha szeretnél további nyelveket hozzáadni/használni, tölsd le a `more_languages.json` nevű fájlt, és rakd abba a mappába, ahol a `main.py` vagy a `ZVidDown.exe` található. (A ZVidDown_installer automatikusan telepíti a more_laungages.json fájlt a program mappájába)
+Ha szeretnél további nyelveket hozzáadni/használni, tölsd le a `more_languages.json` nevű fájlt, és rakd abba a mappába, ahol a `main.py` vagy a `ZVidDown.exe` található.
 
 Ha ez a fájl jelen van, a program automatikusan felkínálja a benne szereplő nyelveket is a menüben. Ha nincs, akkor csak az alapértelmezett angol és magyar közül lehet választani.
 

@@ -89,7 +89,7 @@ You can select the language in the menu at the top right corner (⋮), under the
 
 ### Adding or Using Custom Languages
 
-If you want to add/use more languages, download the `more_languages.json` file and place it in the same folder as `main.py` or `ZVidDown.exe`. (The ZVidDown_installer automatically installs the more_languages.json file into the program folder.)
+If you want to add/use more languages, download the `more_languages.json` file and place it in the same folder as `main.py` or `ZVidDown.exe`.
 
 If this file is present, the program will automatically offer the languages listed in it in the menu. If not, only the default English and Hungarian will be available.
 
