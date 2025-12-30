@@ -369,12 +369,10 @@ class LetoltoTk(tk.Tk):
             messagebox.showwarning(self._t('error'), self._t('missing_folder'))
             return
         mod = self.mod_valaszto.get()
-        # Mindig a legutóbb kiválasztott értéket használjuk, ha van
         felbontas = self.kivalasztott_felbontas if self.kivalasztott_felbontas else (self.felbontas_valaszto.get() if self.felbontas_valaszto['state'] == 'readonly' else None)
         hangfelbontas = self.kivalasztott_hangfelbontas if self.kivalasztott_hangfelbontas else (self.hangfelbontas_valaszto.get() if self.hangfelbontas_valaszto['state'] == 'readonly' else None)
         video_itag = getattr(self, 'video_itag_map', {}).get(felbontas) if felbontas else None
         audio_itag = getattr(self, 'audio_itag_map', {}).get(hangfelbontas) if hangfelbontas else None
-        # Ellenőrzés: csak akkor kérjünk minőséget, ha tényleg van választási lehetőség
         missing_video = (mod == self._t('video_audio') or mod == self._t('video_only')) and (not felbontas or felbontas == self._t('please_choose') or not video_itag)
         missing_audio = (mod == self._t('video_audio') or mod == self._t('audio_only')) and (not hangfelbontas or hangfelbontas == self._t('please_choose') or not audio_itag)
         if missing_video or missing_audio:
