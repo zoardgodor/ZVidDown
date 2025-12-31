@@ -1,6 +1,7 @@
 # ZVidDown – Videó Letöltő
 
-Ez egy egyszerű, grafikus felületű videóletöltő alkalmazás, amellyel YouTube és más támogatott oldalakról tölthetsz le videót, hangot vagy csak videót.
+Ez egy egyszerű, grafikus felületű videóletöltő alkalmazás, amellyel több ezer
+oldalról tölthetsz le videót, hangot vagy csak videót.
 
 ## Fő funkciók
 
@@ -10,7 +11,9 @@ Ez egy egyszerű, grafikus felületű videóletöltő alkalmazás, amellyel YouT
 - Felbontás választás (elérhető opciók)
 - Kimeneti mappa kiválasztása
 - Letöltési folyamat kijelzése
-- Széleskörű weboldal támogatás (YouTube, Videa, stb.)
+- Beépített lejátszó: videók és hangok előnézete letöltés előtt
+- Beépített átváltó: meglévő hang- és videófájlok átkonvertálása más formátumra, minőségre (bitráta, felbontás stb.)
+- Széleskörű weboldal támogatás
 
 ## Technológiák
 
@@ -76,6 +79,8 @@ Az elkészült futtatható fájl a `dist` mappában lesz.
 4. Válaszd ki a felbontást (ha elérhető).
 5. Állítsd be a kimeneti mappát.
 6. Kattints a Letöltés gombra.
+7. Ha szeretnéd előnézetben lejátszani a videót vagy hangot letöltés előtt, használd a beépített lejátszót (Lejátszás gomb).
+8. Ha meglévő hang- vagy videófájlt szeretnél átkonvertálni, nyisd meg a menüből (⋮) az "Átváltó" funkciót, válaszd ki a fájlt, állítsd be a kívánt formátumot és minőséget, majd indítsd el az átalakítást. Az átalakított fájl az eredeti mappába kerül.
 
 ## Licenc
 Lásd: LICENSE.txt
@@ -95,7 +100,9 @@ Ha ez a fájl jelen van, a program automatikusan felkínálja a benne szereplő 
 
 A 'more_laungages.json' akár önnállóan is bővíthető.
 
-## Változások
+## Plusz Funkciók
+- Beépített lejátszó: videók és hangok előnézete közvetlenül a programban, letöltés előtt.
+- Beépített átváltó: hang- és videófájlok átkonvertálása különböző formátumokra (mp3, ogg, m4a, mp4, mkv stb.), hang bitráta és videó felbontás állítási lehetőséggel, állapotsávval és többnyelvű felülettel.
 
 - Letöltés előtt kötelező manuálisan kiválasztani a videó és a hang minőségét. Ha valamelyik nincs kiválasztva, egy ablak jelenik meg két opcióval: OK (megszakítja a letöltést) vagy Tovább alapértelmezett értékekkel (bestvideo+bestaudio letöltése).
 - A hangminőség (bitráta/formátum) is külön választható, nem csak a videó felbontás.

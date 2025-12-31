@@ -1,6 +1,6 @@
 # ZVidDown – Video Downloader
 
-This is a simple graphical video downloader application that allows you to download video, audio, or just video from YouTube and other supported sites.
+This is a simple graphical video downloader application that allows you to download video, audio, or just video from thousands of websites.
 
 ## Main Features
 
@@ -10,7 +10,9 @@ This is a simple graphical video downloader application that allows you to downl
 - Resolution selection (available options)
 - Choose output folder
 - Download progress display
-- Broad website support (YouTube, Videa, etc.)
+- Built-in player for previewing videos and audio
+- Built-in converter: convert audio and video files to different formats and qualities (bitrate, resolution, etc.)
+- Broad website support
 
 ## Technologies
 
@@ -76,6 +78,8 @@ The executable will be in the `dist` folder.
 4. Select the resolution (if available).
 5. Set the output folder.
 6. Click the Download button.
+7. To preview a video or audio before downloading, use the built-in player (Play button).
+8. To convert an existing audio or video file, open the "Converter" from the menu (⋮), select the file, choose the target format and quality, and start the conversion. The converted file will be saved in the same folder as the original.
 
 ## License
 See: LICENSE.txt
@@ -95,7 +99,9 @@ If this file is present, the program will automatically offer the languages list
 
 The 'more_languages.json' file can be expanded independently.
 
-## Latest Features and Changes
+## Plus Features
+- Built-in player: preview videos and audio directly in the app before downloading.
+- Built-in converter: convert audio and video files to various formats (mp3, ogg, m4a, mp4, mkv, etc.), change audio bitrate and video resolution, with progress bar and multilingual interface.
 
 - Manual selection is now required for both video and audio quality before downloading. If you do not select a quality, a dialog will appear with two options: OK (cancel download) or Continue with default values (downloads with bestvideo+bestaudio).
 - The audio quality (bitrate/format) can be selected separately, not just the video resolution.

@@ -4,7 +4,7 @@
     "video_url": "Video URL:",
     "download_mode": "Download mode:",
     "video_audio": "Video + Audio",
-    "audio_only": "Audio Only (mp3)",
+    "audio_only": "Audio Only",
     "video_only": "Video Only",
     "resolution": "Resolution:",
     "select_output": "Select output folder",
@@ -35,13 +35,31 @@
     "missing_video": "No video quality selected!",
     "missing_audio": "No audio quality selected!",
     "continue_default": "Continue with default values"
+  ,  "play": "Play"
+  ,  "converter": "Converter"
+  ,  "audio_converter": "Audio Converter"
+  ,  "video_converter": "Video Converter"
+  ,  "select_audio_file": "Select audio file:"
+  ,  "select_video_file": "Select video file:"
+  ,  "browse": "Browse"
+  ,  "current_bitrate": "Current bitrate:"
+  ,  "target_format": "Target format:"
+  ,  "target_bitrate": "Target bitrate (kbps):"
+  ,  "convert": "Convert"
+  ,  "conversion_done": "Conversion done: {file}"
+  ,  "conversion_failed": "Conversion failed: {error}"
+  ,  "current_resolution": "Current resolution:"
+  ,  "target_resolution": "Target resolution (e.g. 1280x720):"
+  ,  "audio_bitrate": "Audio bitrate:"
+  ,  "no_audio": "No audio or unknown"
+  ,  "progress": "Progress"
   },
   "hu": {
     "title": "Videó Letöltő",
     "video_url": "Videó URL:",
     "download_mode": "Letöltési mód:",
     "video_audio": "Videó + Hang",
-    "audio_only": "Csak Hang (mp3)",
+    "audio_only": "Csak Hang",
     "video_only": "Csak Videó",
     "resolution": "Felbontás:",
     "select_output": "Kimeneti mappa kiválasztása",
@@ -72,13 +90,31 @@
     "missing_video": "Nem választottál videó felbontást!",
     "missing_audio": "Nem választottál hang felbontást!",
     "continue_default": "Tovább alapértelmezett értékekkel"
+  ,  "play": "Lejátszás"
+  ,  "converter": "Átváltó"
+  ,  "audio_converter": "Hang átváltó"
+  ,  "video_converter": "Videó átváltó"
+  ,  "select_audio_file": "Hangfájl kiválasztása:"
+  ,  "select_video_file": "Videófájl kiválasztása:"
+  ,  "browse": "Tallózás"
+  ,  "current_bitrate": "Jelenlegi bitráta:"
+  ,  "target_format": "Cél formátum:"
+  ,  "target_bitrate": "Cél bitráta (kbps):"
+  ,  "convert": "Átalakítás"
+  ,  "conversion_done": "Átalakítás kész: {file}"
+  ,  "conversion_failed": "Átalakítás sikertelen: {error}"
+  ,  "current_resolution": "Jelenlegi felbontás:"
+  ,  "target_resolution": "Cél felbontás (pl. 1280x720):"
+  ,  "audio_bitrate": "Hang bitráta:"
+  ,  "no_audio": "Nincs vagy nem ismert"
+  ,  "progress": "Állapot"
   },
   "de": {
     "title": "Video-Downloader",
     "video_url": "Video-URL:",
     "download_mode": "Download-Modus:",
     "video_audio": "Video + Audio",
-    "audio_only": "Nur Audio (mp3)",
+    "audio_only": "Nur Audio",
     "video_only": "Nur Video",
     "resolution": "Auflösung:",
     "select_output": "Ausgabeordner wählen",
@@ -109,5 +145,24 @@
     "missing_video": "Keine Videoqualität ausgewählt!",
     "missing_audio": "Keine Audioqualität ausgewählt!",
     "continue_default": "Mit Standardwerten fortfahren"
+  ,  "play": "Abspielen"
+  ,  "converter": "Konverter"
+  ,  "audio_converter": "Audio-Konverter"
+  ,  "video_converter": "Video-Konverter"
+  ,  "select_audio_file": "Audiodatei auswählen:"
+  ,  "select_video_file": "Videodatei auswählen:"
+  ,  "browse": "Durchsuchen"
+  ,  "current_bitrate": "Aktuelle Bitrate:"
+  ,  "target_format": "Zielformat:"
+  ,  "target_bitrate": "Zielbitrate (kbps):"
+  ,  "convert": "Konvertieren"
+  ,  "conversion_done": "Konvertierung fertig: {file}"
+  ,  "conversion_failed": "Konvertierung fehlgeschlagen: {error}"
+  ,  "current_resolution": "Aktuelle Auflösung:"
+  ,  "target_resolution": "Zielauflösung (z.B. 1280x720):"
+  ,  "audio_bitrate": "Audio-Bitrate:"
+  ,  "no_audio": "Kein Audio oder unbekannt"
+  ,  "progress": "Fortschritt"
+
   }
 }
