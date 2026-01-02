@@ -11,7 +11,7 @@ This is a simple graphical video downloader application that allows you to downl
 - Choose output folder
 - Download progress display
 - Built-in player for previewing videos and audio
-- Built-in converter: convert audio and video files to different formats and qualities (bitrate, resolution, etc.)
+- Built-in converter: convert audio and video files to different formats, FPS and qualities (bitrate, resolution, etc.)
 - Broad website support
 
 ## Technologies
@@ -27,9 +27,9 @@ This is a simple graphical video downloader application that allows you to downl
 
 Find the latest version here: https://github.com/zoardgodor/ZVidDown/releases
 
-1. Download `ZVidDown.zip` or `ZVidDown_installer.exe`.
+1. Download `ZVidDown_vX.X_WIN64.zip` or `ZVidDown_vX.X_WIN64_installer.exe`.
 2. For the ZIP, extract the archive and run the program (for the installer, follow the instructions).
-3. For ZVidDown.exe (and the installer), you do not need to install ffmpeg.exe and ffprobe.exe separately, as they are bundled with the exe and accessible by the program. However, if you want to run main.py directly, these files must be in the same folder as main.py.
+3. For `ZVidDown_vX.X_WIN64.zip` (and the installer), you do not need to install ffmpeg.exe and ffprobe.exe separately, as they are bundled with the exe and accessible by the program. However, if you want to run main.py directly, these files must be in the same folder as main.py.
 
 (The installer was created using software called Inno Setup Compiler.)
 
@@ -63,16 +63,13 @@ pip install yt-dlp
 pip install pyinstaller
 ```
 
-Then create the exe with the following command (see `make_exe.txt`):
-```sh
-pyinstaller --onefile --noconsole --icon=icon.ico --noupx --add-binary "ffmpeg.exe;." --add-binary "ffprobe.exe;." main.py
-```
+Then create the exe file according to the make_executable.txt file (found in the repository: https://github.com/zoardgodor/ZVidDown/blob/main/make_executable.txt).
 
 The executable will be in the `dist` folder.
 
 ## Usage
 
-1. Start the program (`ZVidDown.exe` or the shortcut created by the installer).
+1. Start the program (`main.exe` or the shortcut created by the installer).
 2. Paste the URL of the video you want to download.
 3. Select the download mode (video+audio, audio only, video only).
 4. Select the resolution (if available).
@@ -93,7 +90,8 @@ You can select the language in the menu at the top right corner (⋮), under the
 
 ### Adding or Using Custom Languages
 
-If you want to add/use more languages, download the `more_languages.json` file and place it in the same folder as `main.py` or `ZVidDown.exe`.
+If you want to add/use more languages, download the `more_languages.json` file and place it in the same folder as `main.py` or `main.exe`.
+The installer installs `main.exe` in Program Files. You can place the json file there.
 
 If this file is present, the program will automatically offer the languages listed in it in the menu. If not, only the default English and Hungarian will be available.
 
