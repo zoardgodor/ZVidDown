@@ -24,12 +24,23 @@ class LetoltoTk(tk.Tk):
                 'download': 'Letöltés',
                 'download_choose_folder': 'Letöltés (Előbb válaszd ki a kimeneti mapát)',
                 'status': '',
+                'ok': 'OK',
+                'cancel': 'Mégse',
+                'ready': 'Kész',
+                'invalid_audio_file': 'Nincs kiválasztva érvényes hangfájl!',
+                'invalid_video_file': 'Nincs kiválasztva érvényes videófájl!',
+                'no_target_format': 'Nem történt változtatás!',
+                'sync_audio_title': 'Szinkronizált hangsáv',
+                'sync_audio_msg': 'A kiválasztott hangsáv valószínűleg szinkronizált.\nSzeretnéd inkább az eredeti hangsávval letölteni?\n\nKiválasztott: {selected}\nEredeti: {original}',
+                'original_audio': 'Eredeti hangsávval',
+                'keep_selected': 'Maradjon a kiválasztott',
+                'fps_too_high': 'A megadott FPS nagyobb, mint a jelenlegi FPS!',
                 'resolutions_need_url': 'Elérhető felbontásokhoz URL-t adj meg!',
                 'fetching_resolutions': 'Felbontások lekérése...',
                 'no_resolution': 'Nem található felbontás',
                 'invalid_url': 'Hibás vagy nem támogatott URL',
                 'error': 'Hiba',
-                'missing_url': 'Add meg a YouTube videó URL-jét!',
+                'missing_url': 'Add meg a videó URL-jét!',
                 'missing_folder': 'Válassz kimeneti mappát!',
                 'start_download': 'Letöltés indítása...',
                 'speed': 'Sebesség',
@@ -40,32 +51,34 @@ class LetoltoTk(tk.Tk):
                 'language': 'Nyelv:',
                 'english': 'Angol',
                 'hungarian': 'Magyar',
+                'current_resolution': 'Jelenlegi felbontás:',
+                'current_bitrate': 'Jelenlegi bitráta:',
+                'current_fps': 'Jelenlegi FPS:',
+                'no_change': 'Nem történt változtatás.',
                 'menu_language': 'Language',
                 'audio_quality': 'Hang felbontás:',
                 'please_choose': 'Kérjük válassz!',
-                'missing_choice_title': 'Missing selection',
-                'missing_both': 'No video and audio quality selected!',
-                'missing_video': 'No video quality selected!',
-                'missing_audio': 'No audio quality selected!',
-                'continue_default': 'Continue with default values',
+                'missing_choice_title': 'Hiányzó választás',
+                'missing_both': 'Nincs videó és hang felbontás kiválasztva! Folytatod alapértelmezett értékekkel?',
+                'missing_video': 'Nincs videó felbontás kiválasztva! Folytatod alapértelmezett értékekkel?',
+                'missing_audio': 'Nincs hang felbontás kiválasztva! Folytatod alapértelmezett értékekkel?',
+                'continue_default': 'Folytatás',
                 'play': 'Lejátszás',
-                "converter": "Átváltó"
-                ,  "audio_converter": "Hang átváltó"
-                ,  "video_converter": "Videó átváltó"
-                ,  "select_audio_file": "Hangfájl kiválasztása:"
-                ,  "select_video_file": "Videófájl kiválasztása:"
-                ,  "browse": "Tallózás"
-                ,  "current_bitrate": "Jelenlegi bitráta:"
-                ,  "target_format": "Cél formátum:"
-                ,  "target_bitrate": "Cél bitráta (kbps):"
-                ,  "convert": "Átalakítás"
-                ,  "conversion_done": "Átalakítás kész: {file}"
-                ,  "conversion_failed": "Átalakítás sikertelen: {error}"
-                ,  "current_resolution": "Jelenlegi felbontás:"
-                ,  "target_resolution": "Cél felbontás (pl. 1280x720):"
-                ,  "audio_bitrate": "Hang bitráta:"
-                ,  "no_audio": "Nincs vagy nem ismert"
-                ,  "progress": "Állapot"
+                "converter": "Átalakító",
+                "audio_converter": "Hang átváltó",
+                "video_converter": "Videó átváltó",
+                "select_audio_file": "Hangfájl kiválasztása:",
+                "select_video_file": "Videófájl kiválasztása:",
+                "browse": "Tallózás",
+                "target_format": "Cél formátum:",
+                "target_bitrate": "Cél bitráta (kbps):",
+                "convert": "Átalakítás",
+                "conversion_done": "Átalakítás kész: {file}",
+                "conversion_failed": "Átalakítás sikertelen: {error}",
+                "target_resolution": "Cél felbontás (pl. 1280x720):",
+                "audio_bitrate": "Hang bitráta:",
+                "no_audio": "Nincs vagy nem ismert",
+                "progress": "Állapot"
             },
             'en': {
                 'title': 'Video Downloader',
@@ -79,12 +92,23 @@ class LetoltoTk(tk.Tk):
                 'download': 'Download',
                 'download_choose_folder': 'Download (Select output folder first)',
                 'status': '',
+                'ok': 'OK',
+                'cancel': 'Cancel',
+                'ready': 'Ready',
+                'invalid_audio_file': 'No valid audio file selected!',
+                'invalid_video_file': 'No valid video file selected!',
+                'no_target_format': 'Nothing changed!',
+                'sync_audio_title': 'Synchronized audio track',
+                'sync_audio_msg': 'The selected audio track is likely synchronized.\nWould you rather download with the original audio track?\n\nSelected: {selected}\nOriginal: {original}',
+                'original_audio': 'With original audio',
+                'keep_selected': 'Keep selected',
+                'fps_too_high': 'The given FPS is higher than the current FPS!',
                 'resolutions_need_url': 'Enter URL to get available resolutions!',
                 'fetching_resolutions': 'Fetching resolutions...',
                 'no_resolution': 'No resolution found',
                 'invalid_url': 'Invalid or unsupported URL',
                 'error': 'Error',
-                'missing_url': 'Please enter the YouTube video URL!',
+                'missing_url': 'Please enter the video URL!',
                 'missing_folder': 'Please select output folder!',
                 'start_download': 'Starting download...',
                 'speed': 'Speed',
@@ -95,32 +119,34 @@ class LetoltoTk(tk.Tk):
                 'language': 'Language:',
                 'english': 'English',
                 'hungarian': 'Hungarian',
+                'current_resolution': 'Current resolution:',
+                'current_bitrate': 'Current bitrate:',
+                'current_fps': 'Current FPS:',
+                'no_change': 'No changes made.',
                 'menu_language': 'Language',
                 'audio_quality': 'Audio quality:',
                 'please_choose': 'Please choose!',
-                'missing_choice_title': 'Hiányzó választás',
-                'missing_both': 'Nem választottál videó és hang felbontást!',
-                'missing_video': 'Nem választottál videó felbontást!',
-                'missing_audio': 'Nem választottál hang felbontást!',
-                'continue_default': 'Tovább alapértelmezett értékekkel',
+                'missing_choice_title': 'Missing selection',
+                'missing_both': 'No video and audio quality selected! Continue with default values?',
+                'missing_video': 'No video quality selected! Continue with default values?',
+                'missing_audio': 'No audio quality selected! Continue with default values?',
+                'continue_default': 'Continue',
                 'play': 'Play',
-                  "converter": "Converter"
-                ,  "audio_converter": "Audio Converter"
-                ,  "video_converter": "Video Converter"
-                ,  "select_audio_file": "Select audio file:"
-                ,  "select_video_file": "Select video file:"
-                ,  "browse": "Browse"
-                ,  "current_bitrate": "Current bitrate:"
-                ,  "target_format": "Target format:"
-                ,  "target_bitrate": "Target bitrate (kbps):"
-                ,  "convert": "Convert"
-                ,  "conversion_done": "Conversion done: {file}"
-                ,  "conversion_failed": "Conversion failed: {error}"
-                ,  "current_resolution": "Current resolution:"
-                ,  "target_resolution": "Target resolution (e.g. 1280x720):"
-                ,  "audio_bitrate": "Audio bitrate:"
-                ,  "no_audio": "No audio or unknown"
-                ,  "progress": "Progress"
+                "converter": "Transformer",
+                "audio_converter": "Audio Converter",
+                "video_converter": "Video Converter",
+                "select_audio_file": "Select audio file:",
+                "select_video_file": "Select video file:",
+                "browse": "Browse",
+                "target_format": "Target format:",
+                "target_bitrate": "Target bitrate (kbps):",
+                "convert": "Transform",
+                "conversion_done": "Conversion done: {file}",
+                "conversion_failed": "Conversion failed: {error}",
+                "target_resolution": "Target resolution (e.g. 1280x720):",
+                "audio_bitrate": "Audio bitrate:",
+                "no_audio": "No audio or unknown",
+                "progress": "Progress"
             }
         }
         self._load_more_languages()
@@ -191,7 +217,7 @@ class LetoltoTk(tk.Tk):
         import subprocess
         win = tk.Toplevel(self)
         win.title(self._t('converter'))
-        win.geometry('440x420')
+        win.geometry('440x500')
 
         tab_control = ttk.Notebook(win)
         tab_audio = ttk.Frame(tab_control)
@@ -201,8 +227,8 @@ class LetoltoTk(tk.Tk):
         tab_control.pack(expand=1, fill='both')
 
         def select_audio_file():
-            filetypes = [('Audio fájlok', '*.mp3 *.ogg *.m4a *.wav *.flac *.aac *.opus'), ('Minden fájl', '*.*')]
-            path = filedialog.askopenfilename(title='Válassz hangfájlt', filetypes=filetypes)
+            filetypes = [(self._t('audio_files') if 'audio_files' in self.translations[self.language] else 'Audio fájlok', '*.mp3 *.ogg *.m4a *.wav *.flac *.aac *.opus'), (self._t('all_files') if 'all_files' in self.translations[self.language] else 'Minden fájl', '*.*')]
+            path = filedialog.askopenfilename(title=self._t('select_audio_file'), filetypes=filetypes)
             if path:
                 entry_audio_file.delete(0, tk.END)
                 entry_audio_file.insert(0, path)
@@ -217,25 +243,25 @@ class LetoltoTk(tk.Tk):
                 cmd = [ffprobe, '-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=bit_rate', '-of', 'default=noprint_wrappers=1:nokey=1', path]
                 result = subprocess.run(cmd, capture_output=True, text=True)
                 br = result.stdout.strip()
-                if br.isdigit():
+                if br.strip().isdigit():
                     br_kbps = int(int(br) / 1000)
-                    label_audio_bitrate.config(text=f'Jelenlegi bitráta: {br_kbps} kbps')
+                    label_audio_bitrate.config(text=f"{self._t('current_bitrate')} {br_kbps} kbps")
                     spin_audio_bitrate.delete(0, tk.END)
                     spin_audio_bitrate.insert(0, str(br_kbps))
                 else:
-                    label_audio_bitrate.config(text='Jelenlegi bitráta: nem ismert')
+                    label_audio_bitrate.config(text=f"{self._t('current_bitrate')} nem ismert")
             except Exception:
-                label_audio_bitrate.config(text='Jelenlegi bitráta: hiba')
+                label_audio_bitrate.config(text=f"{self._t('current_bitrate')} hiba")
 
         def convert_audio():
             src = entry_audio_file.get()
             fmt = combo_audio_format.get()
             br = spin_audio_bitrate.get()
             if not src or not os.path.isfile(src):
-                messagebox.showerror('Hiba', 'Nincs kiválasztva érvényes hangfájl!')
+                messagebox.showerror(self._t('error'), self._t('invalid_audio_file'))
                 return
             if not fmt:
-                messagebox.showerror('Hiba', 'Nincs kiválasztva célformátum!')
+                messagebox.showerror(self._t('error'), self._t('no_target_format'))
                 return
             try:
                 out_dir = os.path.dirname(src)
@@ -247,9 +273,9 @@ class LetoltoTk(tk.Tk):
                     ffmpeg = 'ffmpeg.exe' if os.name == 'nt' else 'ffmpeg'
                 cmd = [ffmpeg, '-y', '-i', src, '-b:a', f'{br}k', out_path]
                 subprocess.run(cmd, check=True)
-                messagebox.showinfo('Kész', f'Átalakítás kész: {out_path}')
+                messagebox.showinfo(self._t('ready'), self._t('conversion_done').format(file=out_path))
             except Exception as e:
-                messagebox.showerror('Hiba', f'Átalakítás sikertelen: {e}')
+                messagebox.showerror(self._t('error'), self._t('conversion_failed').format(error=e))
 
         tk.Label(tab_audio, text=self._t('select_audio_file')).pack(anchor='w', padx=10, pady=(10,0))
         frame_audio_file = tk.Frame(tab_audio)
@@ -277,24 +303,47 @@ class LetoltoTk(tk.Tk):
         audio_percent.pack(anchor='w', padx=10)
 
         def audio_update_progress(val):
-            audio_progress['value'] = val
-            audio_percent.config(text=f'{val}%')
+            if audio_progress.winfo_exists():
+                audio_progress['value'] = val
+                audio_percent.config(text=f'{val}%')
 
         def convert_audio():
             src = entry_audio_file.get()
             fmt = combo_audio_format.get()
             br = spin_audio_bitrate.get()
             if not src or not os.path.isfile(src):
-                messagebox.showerror(self._t('error'), self._t('missing_url'))
-                return
-            if not fmt:
-                messagebox.showerror(self._t('error'), self._t('missing_audio'))
+                messagebox.showerror(self._t('error'), self._t('invalid_audio_file'))
                 return
             def run_ffmpeg():
+                fmt_ff = fmt
+                if not fmt_ff:
+                    fmt_ff = os.path.splitext(src)[1].lstrip('.')
+                br_ff = br
+                orig_ext = os.path.splitext(src)[1].lstrip('.')
+                orig_bitrate = ''
+                if not br_ff or True:
+                    try:
+                        if hasattr(sys, '_MEIPASS'):
+                            ffprobe = os.path.join(sys._MEIPASS, 'ffprobe.exe')
+                        else:
+                            ffprobe = 'ffprobe.exe' if os.name == 'nt' else 'ffprobe'
+                        cmd = [ffprobe, '-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=bit_rate', '-of', 'default=noprint_wrappers=1:nokey=1', src]
+                        result = subprocess.run(cmd, capture_output=True, text=True)
+                        br_val = result.stdout.strip()
+                        if br_val.strip().isdigit():
+                            if not br_ff:
+                                br_ff = str(int(int(br_val) / 1000))
+                            orig_bitrate = str(int(int(br_val) / 1000))
+                    except Exception:
+                        br_ff = ''
+                        orig_bitrate = ''
+                if fmt_ff == orig_ext and (not br or br_ff == orig_bitrate):
+                    messagebox.showinfo(self._t('ready'), self._t('no_change'))
+                    return
                 try:
                     out_dir = os.path.dirname(src)
                     base = os.path.splitext(os.path.basename(src))[0]
-                    out_path = os.path.join(out_dir, f'{base}_converted.{fmt}')
+                    out_path = os.path.join(out_dir, f'{base}_converted.{fmt_ff}')
                     if hasattr(sys, '_MEIPASS'):
                         ffmpeg = os.path.join(sys._MEIPASS, 'ffmpeg.exe')
                         ffprobe = os.path.join(sys._MEIPASS, 'ffprobe.exe')
@@ -307,7 +356,10 @@ class LetoltoTk(tk.Tk):
                         total_sec = float(result.stdout.strip())
                     except Exception:
                         total_sec = None
-                    cmd = [ffmpeg, '-y', '-i', src, '-b:a', f'{br}k', out_path, '-progress', 'pipe:1', '-nostats']
+                    cmd = [ffmpeg, '-y', '-i', src]
+                    if br_ff:
+                        cmd += ['-b:a', f'{br_ff}k']
+                    cmd += [out_path, '-progress', 'pipe:1', '-nostats']
                     proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1)
                     last_percent = 0
                     while True:
@@ -332,7 +384,7 @@ class LetoltoTk(tk.Tk):
                     else:
                         win.after(0, lambda: messagebox.showerror(self._t('error'), self._t('conversion_failed').format(error='')))
                 except Exception as e:
-                    win.after(0, lambda: messagebox.showerror(self._t('error'), self._t('conversion_failed').format(error=e)))
+                    win.after(0, lambda e=e: messagebox.showerror(self._t('error'), self._t('conversion_failed').format(error=e)))
                 win.after(0, audio_update_progress, 0)
             threading.Thread(target=run_ffmpeg, daemon=True).start()
 
@@ -340,8 +392,8 @@ class LetoltoTk(tk.Tk):
         btn_audio_convert.pack(pady=16)
 
         def select_video_file():
-            filetypes = [('Videó fájlok', '*.mp4 *.mkv *.webm *.avi *.mov *.flv *.wmv'), ('Minden fájl', '*.*')]
-            path = filedialog.askopenfilename(title='Válassz videófájlt', filetypes=filetypes)
+            filetypes = [(self._t('video_files') if 'video_files' in self.translations[self.language] else 'Videó fájlok', '*.mp4 *.mkv *.webm *.avi *.mov *.flv *.wmv'), (self._t('all_files') if 'all_files' in self.translations[self.language] else 'Minden fájl', '*.*')]
+            path = filedialog.askopenfilename(title=self._t('select_video_file'), filetypes=filetypes)
             if path:
                 entry_video_file.delete(0, tk.END)
                 entry_video_file.insert(0, path)
@@ -355,24 +407,47 @@ class LetoltoTk(tk.Tk):
                     ffprobe = 'ffprobe.exe' if os.name == 'nt' else 'ffprobe'
                 cmd_res = [ffprobe, '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=x:p=0', path]
                 res = subprocess.run(cmd_res, capture_output=True, text=True).stdout.strip()
-                label_video_res.config(text=f'Jelenlegi felbontás: {res}' if res else 'Jelenlegi felbontás: nem ismert')
+                label_video_res.config(text=f"{self._t('current_resolution')} {res}" if res else f"{self._t('current_resolution')} nem ismert")
                 cmd_abr = [ffprobe, '-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=bit_rate', '-of', 'default=noprint_wrappers=1:nokey=1', path]
                 abr = subprocess.run(cmd_abr, capture_output=True, text=True).stdout.strip()
-                if abr.isdigit():
+                if abr.strip().isdigit():
                     abr_kbps = int(int(abr) / 1000)
-                    label_video_audio_bitrate.config(text=f'Hang bitráta: {abr_kbps} kbps')
+                    label_video_audio_bitrate.config(text=f"{self._t('audio_bitrate')} {abr_kbps} kbps")
                     spin_video_audio_bitrate.config(state='normal')
                     spin_video_audio_bitrate.delete(0, tk.END)
                     spin_video_audio_bitrate.insert(0, str(abr_kbps))
                 else:
-                    label_video_audio_bitrate.config(text='Hang bitráta: nincs vagy nem ismert')
+                    label_video_audio_bitrate.config(text=f"{self._t('audio_bitrate')} {self._t('no_audio')}")
                     spin_video_audio_bitrate.delete(0, tk.END)
                     spin_video_audio_bitrate.config(state='disabled')
+                cmd_fps = [ffprobe, '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=r_frame_rate', '-of', 'default=noprint_wrappers=1:nokey=1', path]
+                fps_raw = subprocess.run(cmd_fps, capture_output=True, text=True).stdout.strip()
+                try:
+                    if '/' in fps_raw:
+                        num, denom = fps_raw.split('/')
+                        fps_val = round(float(num) / float(denom), 2) if float(denom) != 0 else 0
+                    else:
+                        fps_val = float(fps_raw)
+                except Exception:
+                    fps_val = None
+                if fps_val:
+                    label_video_fps.config(text=f"{self._t('current_fps')} {fps_val}")
+                    entry_video_fps.delete(0, tk.END)
+                    entry_video_fps.insert(0, str(int(fps_val)))
+                    entry_video_fps.config(state='normal')
+                else:
+                    label_video_fps.config(text=f"{self._t('current_fps')} nem ismert")
+                    entry_video_fps.delete(0, tk.END)
+                    entry_video_fps.config(state='disabled')
+                entry_video_fps.current_fps = fps_val
             except Exception:
-                label_video_res.config(text='Jelenlegi felbontás: hiba')
-                label_video_audio_bitrate.config(text='Hang bitráta: hiba')
+                label_video_res.config(text=f"{self._t('current_resolution')} hiba")
+                label_video_audio_bitrate.config(text=f"{self._t('audio_bitrate')} hiba")
+                label_video_fps.config(text=f"{self._t('current_fps')} hiba")
                 spin_video_audio_bitrate.delete(0, tk.END)
                 spin_video_audio_bitrate.config(state='disabled')
+                entry_video_fps.delete(0, tk.END)
+                entry_video_fps.config(state='disabled')
 
         def convert_video():
             src = entry_video_file.get()
@@ -380,11 +455,10 @@ class LetoltoTk(tk.Tk):
             res = combo_video_res.get()
             abr = spin_video_audio_bitrate.get()
             if not src or not os.path.isfile(src):
-                messagebox.showerror('Hiba', 'Nincs kiválasztva érvényes videófájl!')
+                messagebox.showerror(self._t('error'), self._t('invalid_video_file'))
                 return
             if not fmt:
-                messagebox.showerror('Hiba', 'Nincs kiválasztva célformátum!')
-                return
+                fmt = os.path.splitext(src)[1].lstrip('.')
             try:
                 out_dir = os.path.dirname(src)
                 base = os.path.splitext(os.path.basename(src))[0]
@@ -397,9 +471,9 @@ class LetoltoTk(tk.Tk):
                     cmd += ['-b:a', f'{abr}k']
                 cmd += [out_path]
                 subprocess.run(cmd, check=True)
-                messagebox.showinfo('Kész', f'Átalakítás kész: {out_path}')
+                messagebox.showinfo(self._t('ready'), self._t('conversion_done').format(file=out_path))
             except Exception as e:
-                messagebox.showerror('Hiba', f'Átalakítás sikertelen: {e}')
+                messagebox.showerror(self._t('error'), self._t('conversion_failed').format(error=e))
 
         tk.Label(tab_video, text=self._t('select_video_file')).pack(anchor='w', padx=10, pady=(10,0))
         frame_video_file = tk.Frame(tab_video)
@@ -426,6 +500,12 @@ class LetoltoTk(tk.Tk):
         spin_video_audio_bitrate.pack(anchor='w', padx=10)
         spin_video_audio_bitrate.config(state='disabled')
 
+        label_video_fps = tk.Label(tab_video, text=self._t('current_fps'))
+        label_video_fps.pack(anchor='w', padx=10, pady=(6,0))
+        entry_video_fps = tk.Entry(tab_video, width=8)
+        entry_video_fps.pack(anchor='w', padx=10)
+        entry_video_fps.config(state='disabled')
+
         tk.Label(tab_video, text=self._t('progress')).pack(anchor='w', padx=10, pady=(10,0))
         video_progress = ttk.Progressbar(tab_video, orient='horizontal', length=320, mode='determinate')
         video_progress.pack(padx=10, pady=(0,0))
@@ -433,8 +513,9 @@ class LetoltoTk(tk.Tk):
         video_percent.pack(anchor='w', padx=10)
 
         def video_update_progress(val):
-            video_progress['value'] = val
-            video_percent.config(text=f'{val}%')
+            if video_progress.winfo_exists():
+                video_progress['value'] = val
+                video_percent.config(text=f'{val}%')
 
         def convert_video():
             src = entry_video_file.get()
@@ -442,16 +523,89 @@ class LetoltoTk(tk.Tk):
             res = combo_video_res.get()
             abr = spin_video_audio_bitrate.get()
             if not src or not os.path.isfile(src):
-                messagebox.showerror(self._t('error'), self._t('missing_url'))
+                messagebox.showerror(self._t('error'), self._t('invalid_video_file'))
                 return
             if not fmt:
-                messagebox.showerror(self._t('error'), self._t('missing_video'))
+                messagebox.showerror(self._t('error'), self._t('no_target_format'))
                 return
             def run_ffmpeg():
+                fmt_ff = fmt
+                if not fmt_ff:
+                    fmt_ff = os.path.splitext(src)[1].lstrip('.')
+                abr_ff = abr
+                orig_ext = os.path.splitext(src)[1].lstrip('.')
+                orig_bitrate = ''
+                orig_res = ''
+                orig_fps = ''
+                if not abr_ff or True:
+                    try:
+                        if hasattr(sys, '_MEIPASS'):
+                            ffprobe = os.path.join(sys._MEIPASS, 'ffprobe.exe')
+                        else:
+                            ffprobe = 'ffprobe.exe' if os.name == 'nt' else 'ffprobe'
+                        cmd_abr = [ffprobe, '-v', 'error', '-select_streams', 'a:0', '-show_entries', 'stream=bit_rate', '-of', 'default=noprint_wrappers=1:nokey=1', src]
+                        abr_val = subprocess.run(cmd_abr, capture_output=True, text=True).stdout.strip()
+                        if abr_val.strip().isdigit():
+                            if not abr_ff:
+                                abr_ff = str(int(int(abr_val) / 1000))
+                            orig_bitrate = str(int(int(abr_val) / 1000))
+                        cmd_res = [ffprobe, '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=x:p=0', src]
+                        res_val = subprocess.run(cmd_res, capture_output=True, text=True).stdout.strip()
+                        if res_val:
+                            orig_res = res_val
+                        cmd_fps = [ffprobe, '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=r_frame_rate', '-of', 'default=noprint_wrappers=1:nokey=1', src]
+                        fps_raw = subprocess.run(cmd_fps, capture_output=True, text=True).stdout.strip()
+                        if '/' in fps_raw:
+                            num, denom = fps_raw.split('/')
+                            fps_val = round(float(num) / float(denom), 2) if float(denom) != 0 else 0
+                        else:
+                            fps_val = float(fps_raw)
+                        if fps_val:
+                            orig_fps = str(int(fps_val))
+                    except Exception:
+                        abr_ff = ''
+                        orig_bitrate = ''
+                        orig_res = ''
+                        orig_fps = ''
+                res_ff = res
+                if not res_ff:
+                    try:
+                        if hasattr(sys, '_MEIPASS'):
+                            ffprobe = os.path.join(sys._MEIPASS, 'ffprobe.exe')
+                        else:
+                            ffprobe = 'ffprobe.exe' if os.name == 'nt' else 'ffprobe'
+                        cmd_res = [ffprobe, '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height', '-of', 'csv=s=x:p=0', src]
+                        res_val = subprocess.run(cmd_res, capture_output=True, text=True).stdout.strip()
+                        if res_val:
+                            res_ff = res_val
+                    except Exception:
+                        res_ff = ''
+                fps_input = entry_video_fps.get().strip()
+                fps_ff = fps_input
+                if not fps_ff:
+                    try:
+                        if hasattr(sys, '_MEIPASS'):
+                            ffprobe = os.path.join(sys._MEIPASS, 'ffprobe.exe')
+                        else:
+                            ffprobe = 'ffprobe.exe' if os.name == 'nt' else 'ffprobe'
+                        cmd_fps = [ffprobe, '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=r_frame_rate', '-of', 'default=noprint_wrappers=1:nokey=1', src]
+                        fps_raw = subprocess.run(cmd_fps, capture_output=True, text=True).stdout.strip()
+                        if '/' in fps_raw:
+                            num, denom = fps_raw.split('/')
+                            fps_val = round(float(num) / float(denom), 2) if float(denom) != 0 else 0
+                        else:
+                            fps_val = float(fps_raw)
+                        if fps_val:
+                            fps_ff = str(int(fps_val))
+                    except Exception:
+                        fps_ff = ''
+                if fmt_ff == orig_ext and (not abr or abr_ff == orig_bitrate) and (not res or res_ff == orig_res) and (not fps_input or fps_ff == orig_fps):
+                    messagebox.showinfo(self._t('ready'), self._t('no_change'))
+                    return
                 try:
                     out_dir = os.path.dirname(src)
                     base = os.path.splitext(os.path.basename(src))[0]
-                    out_path = os.path.join(out_dir, f'{base}_converted.{fmt}')
+                    out_path = os.path.join(out_dir, f'{base}_converted.{fmt_ff}')
                     if hasattr(sys, '_MEIPASS'):
                         ffmpeg = os.path.join(sys._MEIPASS, 'ffmpeg.exe')
                         ffprobe = os.path.join(sys._MEIPASS, 'ffprobe.exe')
@@ -465,10 +619,12 @@ class LetoltoTk(tk.Tk):
                     except Exception:
                         total_sec = None
                     cmd = [ffmpeg, '-y', '-i', src]
-                    if res and 'x' in res:
-                        cmd += ['-vf', f'scale={res}']
-                    if spin_video_audio_bitrate.cget('state') == 'normal' and abr:
-                        cmd += ['-b:a', f'{abr}k']
+                    if res_ff and 'x' in res_ff:
+                        cmd += ['-vf', f'scale={res_ff}']
+                    if fps_ff:
+                        cmd += ['-r', fps_ff]
+                    if spin_video_audio_bitrate.cget('state') == 'normal' and abr_ff:
+                        cmd += ['-b:a', f'{abr_ff}k']
                     cmd += [out_path, '-progress', 'pipe:1', '-nostats']
                     proc = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, bufsize=1)
                     last_percent = 0
@@ -494,7 +650,7 @@ class LetoltoTk(tk.Tk):
                     else:
                         win.after(0, lambda: messagebox.showerror(self._t('error'), self._t('conversion_failed').format(error='')))
                 except Exception as e:
-                    win.after(0, lambda: messagebox.showerror(self._t('error'), self._t('conversion_failed').format(error=e)))
+                    win.after(0, lambda e=e: messagebox.showerror(self._t('error'), self._t('conversion_failed').format(error=e)))
                 win.after(0, video_update_progress, 0)
             threading.Thread(target=run_ffmpeg, daemon=True).start()
 
@@ -516,7 +672,7 @@ class LetoltoTk(tk.Tk):
 
         self.cimke_mod = tk.Label(self, text=self._t('download_mode'))
         self.cimke_mod.pack(anchor='w', padx=10)
-        self.mod_valaszto = ttk.Combobox(self, values=[self._t('video_audio'), self._t('audio_only'), self._t('video_only')], state='readonly')
+        self.mod_valaszto = ttk.Combobox(self, values=[self._t('video_audio'), self._t('audio_only'), self._t('video_only')], state='normal')
         self.mod_valaszto.current(0)
         self.mod_valaszto.pack(padx=10, pady=(0,pady))
         self.mod_valaszto.bind('<<ComboboxSelected>>', lambda e: self.felbontasok())
@@ -814,14 +970,14 @@ class LetoltoTk(tk.Tk):
                     orig_audio_itag = getattr(self, 'audio_itag_map', {}).get(orig_label)
                     threading.Thread(target=self.folyamat, args=(url, mod, video_itag, orig_audio_itag), daemon=True).start()
                 ablak = tk.Toplevel(self)
-                ablak.title('Szinkronizált hangsáv')
+                ablak.title(self._t('sync_audio_title'))
                 ablak.geometry('400x140')
-                msg = f"A kiválasztott hangsáv valószínűleg szinkronizált.\nSzeretnéd inkább az eredeti hangsávval letölteni?\n\nKiválasztott: {hangfelbontas}\nEredeti: {orig_labels[0]}"
+                msg = self._t('sync_audio_msg').format(selected=hangfelbontas, original=orig_labels[0])
                 label = tk.Label(ablak, text=msg, wraplength=380)
                 label.pack(pady=10)
-                gomb1 = tk.Button(ablak, text='Maradjon a kiválasztott', command=use_selected)
+                gomb1 = tk.Button(ablak, text=self._t('keep_selected'), command=use_selected)
                 gomb1.pack(side='left', padx=30, pady=10)
-                gomb2 = tk.Button(ablak, text='Eredeti hangsávval', command=use_original)
+                gomb2 = tk.Button(ablak, text=self._t('original_audio'), command=use_original)
                 gomb2.pack(side='right', padx=30, pady=10)
                 return
         if missing_video or missing_audio:
@@ -845,7 +1001,7 @@ class LetoltoTk(tk.Tk):
                 uzenet = self._t('missing_audio')
             label = tk.Label(valaszt_ablak, text=uzenet, wraplength=320)
             label.pack(pady=10)
-            gomb1 = tk.Button(valaszt_ablak, text='OK', command=dont_download)
+            gomb1 = tk.Button(valaszt_ablak, text=self._t('ok'), command=dont_download)
             gomb1.pack(side='left', padx=30, pady=10)
             gomb2 = tk.Button(valaszt_ablak, text=self._t('continue_default'), command=download_default)
             gomb2.pack(side='right', padx=30, pady=10)

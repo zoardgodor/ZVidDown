@@ -102,7 +102,7 @@ A 'more_laungages.json' akár önnállóan is bővíthető.
 
 ## Plusz Funkciók
 - Beépített lejátszó: videók és hangok előnézete közvetlenül a programban, letöltés előtt.
-- Beépített átváltó: hang- és videófájlok átkonvertálása különböző formátumokra (mp3, ogg, m4a, mp4, mkv stb.), hang bitráta és videó felbontás állítási lehetőséggel, állapotsávval és többnyelvű felülettel.
+- Beépített átváltó: hang- és videófájlok átkonvertálása különböző formátumokra (mp3, ogg, m4a, mp4, mkv stb.), hang bitráta és videó felbontás állítási lehetőséggel, állapotsávval és többnyelvű felülettel. FPS változtató is van benne.
 
 - Letöltés előtt kötelező manuálisan kiválasztani a videó és a hang minőségét. Ha valamelyik nincs kiválasztva, egy ablak jelenik meg két opcióval: OK (megszakítja a letöltést) vagy Tovább alapértelmezett értékekkel (bestvideo+bestaudio letöltése).
 - A hangminőség (bitráta/formátum) is külön választható, nem csak a videó felbontás.

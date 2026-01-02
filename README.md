@@ -101,7 +101,7 @@ The 'more_languages.json' file can be expanded independently.
 
 ## Plus Features
 - Built-in player: preview videos and audio directly in the app before downloading.
-- Built-in converter: convert audio and video files to various formats (mp3, ogg, m4a, mp4, mkv, etc.), change audio bitrate and video resolution, with progress bar and multilingual interface.
+- Built-in converter: convert audio and video files to various formats (mp3, ogg, m4a, mp4, mkv, etc.), change audio bitrate and video resolution, with progress bar and multilingual interface. It also includes an FPS changer.
 
 - Manual selection is now required for both video and audio quality before downloading. If you do not select a quality, a dialog will appear with two options: OK (cancel download) or Continue with default values (downloads with bestvideo+bestaudio).
 - The audio quality (bitrate/format) can be selected separately, not just the video resolution.

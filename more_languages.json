@@ -1,5 +1,17 @@
 {
   "en": {
+      "current_fps": "Current FPS:",
+      "no_change": "No changes made.",
+      "original_audio": "With original audio",
+      "keep_selected": "Keep selected",
+      "sync_audio_title": "Synchronized audio track",
+      "sync_audio_msg": "The selected audio track is likely synchronized.\nWould you rather download with the original audio track?\n\nSelected: {selected}\nOriginal: {original}",
+      "invalid_audio_file": "No valid audio file selected!",
+      "invalid_video_file": "No valid video file selected!",
+      "no_target_format": "Nothing changed!",
+      "ready": "Ready",
+      "ok": "OK",
+      "cancel": "Cancel",
     "title": "Video Downloader",
     "video_url": "Video URL:",
     "download_mode": "Download mode:",
@@ -16,7 +28,7 @@
     "no_resolution": "No resolution found",
     "invalid_url": "Invalid or unsupported URL",
     "error": "Error",
-    "missing_url": "Please enter the YouTube video URL!",
+    "missing_url": "Please enter the video URL!",
     "missing_folder": "Please select output folder!",
     "start_download": "Starting download...",
     "speed": "Speed",
@@ -31,30 +43,42 @@
     "audio_quality": "Audio quality:",
     "please_choose": "Please choose!",
     "missing_choice_title": "Missing selection",
-    "missing_both": "No video and audio quality selected!",
-    "missing_video": "No video quality selected!",
-    "missing_audio": "No audio quality selected!",
-    "continue_default": "Continue with default values"
-  ,  "play": "Play"
-  ,  "converter": "Converter"
-  ,  "audio_converter": "Audio Converter"
-  ,  "video_converter": "Video Converter"
-  ,  "select_audio_file": "Select audio file:"
-  ,  "select_video_file": "Select video file:"
-  ,  "browse": "Browse"
-  ,  "current_bitrate": "Current bitrate:"
-  ,  "target_format": "Target format:"
-  ,  "target_bitrate": "Target bitrate (kbps):"
-  ,  "convert": "Convert"
-  ,  "conversion_done": "Conversion done: {file}"
-  ,  "conversion_failed": "Conversion failed: {error}"
-  ,  "current_resolution": "Current resolution:"
-  ,  "target_resolution": "Target resolution (e.g. 1280x720):"
-  ,  "audio_bitrate": "Audio bitrate:"
-  ,  "no_audio": "No audio or unknown"
-  ,  "progress": "Progress"
+    "missing_both": "No video and audio quality selected! Continue with default values?",
+    "missing_video": "No video quality selected! Continue with default values?",
+    "missing_audio": "No audio quality selected! Continue with default values?",
+    "continue_default": "Continue",
+    "play": "Play",
+    "converter": "Transformer",
+    "audio_converter": "Audio Transformer",
+    "video_converter": "Video Transformer",
+    "select_audio_file": "Select audio file:",
+    "select_video_file": "Select video file:",
+    "browse": "Browse",
+    "current_bitrate": "Current bitrate:",
+    "target_format": "Target format:",
+    "target_bitrate": "Target bitrate (kbps):",
+    "convert": "Transform",
+    "conversion_done": "Conversion done: {file}",
+    "conversion_failed": "Conversion failed: {error}",
+    "current_resolution": "Current resolution:",
+    "target_resolution": "Target resolution (e.g. 1280x720):",
+    "audio_bitrate": "Audio bitrate:",
+    "no_audio": "No audio or unknown",
+    "progress": "Progress"
   },
   "hu": {
+      "current_fps": "Jelenlegi FPS:",
+      "no_change": "Nem történt változtatás.",
+      "original_audio": "Eredeti hangsávval",
+      "keep_selected": "Maradjon a kiválasztott",
+      "sync_audio_title": "Szinkronizált hangsáv",
+      "sync_audio_msg": "A kiválasztott hangsáv valószínűleg szinkronizált.\nSzeretnéd inkább az eredeti hangsávval letölteni?\n\nKiválasztott: {selected}\nEredeti: {original}",
+      "invalid_audio_file": "Nincs kiválasztva érvényes hangfájl!",
+      "invalid_video_file": "Nincs kiválasztva érvényes videófájl!",
+      "no_target_format": "Nem történt változtatás!",
+      "ready": "Kész",
+      "ok": "OK",
+      "cancel": "Mégse",
     "title": "Videó Letöltő",
     "video_url": "Videó URL:",
     "download_mode": "Letöltési mód:",
@@ -71,7 +95,7 @@
     "no_resolution": "Nem található felbontás",
     "invalid_url": "Hibás vagy nem támogatott URL",
     "error": "Hiba",
-    "missing_url": "Add meg a YouTube videó URL-jét!",
+    "missing_url": "Add meg a videó URL-jét!",
     "missing_folder": "Válassz kimeneti mappát!",
     "start_download": "Letöltés indítása...",
     "speed": "Sebesség",
@@ -86,30 +110,42 @@
     "audio_quality": "Hang felbontás:",
     "please_choose": "Kérjük válassz!",
     "missing_choice_title": "Hiányzó választás",
-    "missing_both": "Nem választottál videó és hang felbontást!",
-    "missing_video": "Nem választottál videó felbontást!",
-    "missing_audio": "Nem választottál hang felbontást!",
-    "continue_default": "Tovább alapértelmezett értékekkel"
-  ,  "play": "Lejátszás"
-  ,  "converter": "Átváltó"
-  ,  "audio_converter": "Hang átváltó"
-  ,  "video_converter": "Videó átváltó"
-  ,  "select_audio_file": "Hangfájl kiválasztása:"
-  ,  "select_video_file": "Videófájl kiválasztása:"
-  ,  "browse": "Tallózás"
-  ,  "current_bitrate": "Jelenlegi bitráta:"
-  ,  "target_format": "Cél formátum:"
-  ,  "target_bitrate": "Cél bitráta (kbps):"
-  ,  "convert": "Átalakítás"
-  ,  "conversion_done": "Átalakítás kész: {file}"
-  ,  "conversion_failed": "Átalakítás sikertelen: {error}"
-  ,  "current_resolution": "Jelenlegi felbontás:"
-  ,  "target_resolution": "Cél felbontás (pl. 1280x720):"
-  ,  "audio_bitrate": "Hang bitráta:"
-  ,  "no_audio": "Nincs vagy nem ismert"
-  ,  "progress": "Állapot"
+    "missing_both": "Nincs videó és hang felbontás kiválasztva! Folytatod alapértelmezett értékekkel?",
+    "missing_video": "Nincs videó felbontás kiválasztva! Folytatod alapértelmezett értékekkel?",
+    "missing_audio": "Nincs hang felbontás kiválasztva! Folytatod alapértelmezett értékekkel?",
+    "continue_default": "Folytatás",
+    "converter": "Átalakító",
+    "play": "Lejátszás",
+    "audio_converter": "Hang átalakító",
+    "video_converter": "Videó átalakító",
+    "select_audio_file": "Hangfájl kiválasztása:",
+    "select_video_file": "Videófájl kiválasztása:",
+    "browse": "Tallózás",
+    "current_bitrate": "Jelenlegi bitráta:",
+    "target_format": "Cél formátum:",
+    "target_bitrate": "Cél bitráta (kbps):",
+    "convert": "Átalakítás",
+    "conversion_done": "Átalakítás kész: {file}",
+    "conversion_failed": "Átalakítás sikertelen: {error}",
+    "current_resolution": "Jelenlegi felbontás:",
+    "target_resolution": "Cél felbontás (pl. 1280x720):",
+    "audio_bitrate": "Hang bitráta:",
+    "no_audio": "Nincs vagy nem ismert",
+    "progress": "Állapot"
   },
   "de": {
+      "current_fps": "Aktuelle FPS:",
+      "no_change": "Keine Änderungen vorgenommen.",
+      "original_audio": "Mit Originalton",
+      "keep_selected": "Auswahl beibehalten",
+      "sync_audio_title": "Synchronisierte Audiospur",
+      "sync_audio_msg": "Die ausgewählte Audiospur ist wahrscheinlich synchronisiert.\nMöchten Sie lieber mit der Original-Audiospur herunterladen?\n\nAusgewählt: {selected}\nOriginal: {original}",
+      "invalid_audio_file": "Keine gültige Audiodatei ausgewählt!",
+      "invalid_video_file": "Keine gültige Videodatei ausgewählt!",
+      "no_target_format": "Kein Änderungen vorgenommen!",
+      "ready": "Fertig",
+      "ok": "OK",
+      "cancel": "Abbrechen",
     "title": "Video-Downloader",
     "video_url": "Video-URL:",
     "download_mode": "Download-Modus:",
@@ -126,7 +162,7 @@
     "no_resolution": "Keine Auflösung gefunden",
     "invalid_url": "Ungültige oder nicht unterstützte URL",
     "error": "Fehler",
-    "missing_url": "Bitte geben Sie die YouTube-Video-URL ein!",
+    "missing_url": "Bitte geben Sie die Video-URL ein!",
     "missing_folder": "Bitte Ausgabeordner wählen!",
     "start_download": "Download wird gestartet...",
     "speed": "Geschwindigkeit",
