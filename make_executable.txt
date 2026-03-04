@@ -1,1 +1,6 @@
-pyinstaller --name ZVidDown --onedir --noconsole --icon=icon.ico --noupx main.py
+python -m PyInstaller \
+    --name ZVidDown --onedir --noconsole --icon=icon.ico --noupx \
+    --add-data "config;config" \
+    --add-data "core;core" \
+    --add-data "ui;ui" \
+    main.py
