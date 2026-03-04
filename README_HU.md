@@ -66,7 +66,7 @@ pip install pyinstaller
 Majd készítsd el az exe-t a make_executable.txt fájl szerint (a repóban megtalálható: https://github.com/zoardgodor/ZVidDown/blob/main/make_executable.txt)
 
 Az elkészült futtatható fájl a `dist` mappában lesz. Rakd be a ZVidDown.exe mellé az
-ffmpeg.exe, ffplay.exe és az ffprobe.exe fájlokat!
+ffmpeg.exe és az ffprobe.exe fájlokat!
 
 ## Használat
 
