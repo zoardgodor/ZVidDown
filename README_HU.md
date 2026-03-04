@@ -11,14 +11,13 @@ oldalról tölthetsz le videót, hangot vagy csak videót.
 - Felbontás választás (elérhető opciók)
 - Kimeneti mappa kiválasztása
 - Letöltési folyamat kijelzése
-- Beépített lejátszó: videók és hangok előnézete letöltés előtt
 - Beépített átváltó: meglévő hang- és videófájlok átkonvertálása más formátumra, minőségre, FPS-re (bitráta, felbontás stb.)
 - Széleskörű weboldal támogatás
 
 ## Technológiák
 
 - Python 3
-- Tkinter (grafikus felület)
+- PySide6 (grafikus felület)
 - yt-dlp (videóletöltés)
 - ffmpeg, ffprobe (médiafeldolgozás)
 
@@ -42,7 +41,7 @@ Szükséges:
 
 Telepítsd a szükséges csomagokat:
 ```sh
-pip install yt-dlp
+pip install yt-dlp pyside6
 ```
 
 Futtasd a main.py-t:
@@ -58,7 +57,7 @@ Szükséges:
 
 Telepítsd a szükséges csomagokat:
 ```sh
-pip install yt-dlp
+pip install yt-dlp pyside6
 ```
 ```sh
 pip install pyinstaller
@@ -66,18 +65,18 @@ pip install pyinstaller
 
 Majd készítsd el az exe-t a make_executable.txt fájl szerint (a repóban megtalálható: https://github.com/zoardgodor/ZVidDown/blob/main/make_executable.txt)
 
-Az elkészült futtatható fájl a `dist` mappában lesz.
+Az elkészült futtatható fájl a `dist` mappában lesz. Rakd be a ZVidDown.exe mellé az
+ffmpeg.exe, ffplay.exe és az ffprobe.exe fájlokat!
 
 ## Használat
 
-1. Indítsd el a programot (`main.exe` vagy a telepítő által létrehozott parancsikonnal).
+1. Indítsd el a programot (`ZVidDown.exe` vagy a telepítő által létrehozott parancsikonnal).
 2. Illeszd be a letölteni kívánt videó URL-jét.
 3. Válaszd ki a letöltési módot (videó+hang, csak hang, csak videó).
 4. Válaszd ki a felbontást (ha elérhető).
 5. Állítsd be a kimeneti mappát.
 6. Kattints a Letöltés gombra.
-7. Ha szeretnéd előnézetben lejátszani a videót vagy hangot letöltés előtt, használd a beépített lejátszót (Lejátszás gomb).
-8. Ha meglévő hang- vagy videófájlt szeretnél átkonvertálni, nyisd meg a menüből (⋮) az "Átváltó" funkciót, válaszd ki a fájlt, állítsd be a kívánt formátumot és minőséget, majd indítsd el az átalakítást. Az átalakított fájl az eredeti mappába kerül.
+7. Ha meglévő hang- vagy videófájlt szeretnél átkonvertálni, nyisd meg a menüből (⋮) az "Átváltó" funkciót, válaszd ki a fájlt, állítsd be a kívánt formátumot és minőséget, majd indítsd el az átalakítást. Az átalakított fájl az eredeti mappába kerül.
 
 ## Licenc
 Lásd: LICENSE.txt
@@ -91,15 +90,14 @@ Nyelvet a jobb felső sarokban található hárompontos (⋮) menüben, a "Langu
 
 ### Saját vagy további nyelvek hozzáadása
 
-Ha szeretnél további nyelveket hozzáadni/használni, tölsd le a `more_languages.json` nevű fájlt, és rakd abba a mappába, ahol a `main.py` vagy a `main.exe` található.
-Az installernél a Program Files-ba telepíti a `main.exe`-t. oda lehet behelyezni a json-t.
+Ha szeretnél további nyelveket hozzáadni/használni, tölsd le a `more_languages.json` nevű fájlt, és rakd abba a mappába, ahol a `main.py` vagy a `ZVidDown.exe` található.
+Az installernél a Program Files-ba telepíti a `ZVidDown.exe`-t. oda lehet behelyezni a json-t.
 
 Ha ez a fájl jelen van, a program automatikusan felkínálja a benne szereplő nyelveket is a menüben. Ha nincs, akkor csak az alapértelmezett angol és magyar közül lehet választani.
 
 A 'more_laungages.json' akár önnállóan is bővíthető.
 
 ## Plusz Funkciók
-- Beépített lejátszó: videók és hangok előnézete közvetlenül a programban, letöltés előtt.
 - Beépített átváltó: hang- és videófájlok átkonvertálása különböző formátumokra (mp3, ogg, m4a, mp4, mkv stb.), hang bitráta és videó felbontás állítási lehetőséggel, állapotsávval és többnyelvű felülettel. FPS változtató is van benne.
 
 - Letöltés előtt kötelező manuálisan kiválasztani a videó és a hang minőségét. Ha valamelyik nincs kiválasztva, egy ablak jelenik meg két opcióval: OK (megszakítja a letöltést) vagy Tovább alapértelmezett értékekkel (bestvideo+bestaudio letöltése).
