@@ -110,5 +110,7 @@ The 'more_laungages.json' can also be extended independently.
 **Contact details for reporting issues:**
 
 Github's built-in issue reporting system
+
 Email: zoard.godor@gmail.com
+
 Github: zoardgodor
