@@ -108,3 +108,9 @@ A 'more_laungages.json' akár önnállóan is bővíthető.
 - A nyelvi rendszer és a more_languages.json minden új felület- és üzenetelemre kiterjed.
 
 **Készítette: Gódor Zoárd a ZLockCore fejlesztője**
+
+**Elérhetőséhek problémák jelentésére:**
+
+Github beépített problémajelentő rendszere
+Email: zoard.godor@gmail.com
+Github: zoardgodor
