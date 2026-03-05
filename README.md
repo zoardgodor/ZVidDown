@@ -106,3 +106,9 @@ The 'more_laungages.json' can also be extended independently.
 - The language system and more_languages.json extend to every new interface and message element.
 
 **Created by: Gódor Zoárd, developer of ZLockCore**
+
+**Contact details for reporting issues:**
+
+Github's built-in issue reporting system
+Email: zoard.godor@gmail.com
+Github: zoardgodor
