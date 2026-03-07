@@ -27,9 +27,9 @@ oldalról tölthetsz le videót, hangot vagy csak videót.
 
 Keresd meg a legfrisseb verziót a következő weboldalon: https://github.com/zoardgodor/ZVidDown/releases
 
-1. Töltsd le a `ZVidDown_vX.X_WIN64.zip`-et vagy a `ZVidDown_vX.X_WIN64_installer.exe`-t.
+1. Töltsd le a `ZVidDown_vX.X_WIN64.zip`-et vagy a `ZVidDown_vX.X_WIN64_installer.exe`-t. Ha linuxra kéne, akkor az AppImage verziót töltsd le.
 2. A ZIP esetén bonsd ki a tömörített archívumot, és futtasd (telepítő esetén kövesd az utasításokat).
-3. Az ffmpeg.exe és az ffprobe.exe a `ZVidDown_vX.X_WIN64.zip`-nél (sem az installer-nél) nem kell őket külön letölteni, berakni, mert már előre be van helyezve. De ha simán a main.py-t szeretnéd tuttatni, ott ezeknek abban a mappában kell lennie ahol a main.py van.
+3. Az ffmpeg.exe és az ffprobe.exe a `ZVidDown_vX.X_WIN64.zip`-nél (sem az installer-nél vagy az AppImage-nél) nem kell őket külön letölteni, berakni, mert már előre be van helyezve. De ha simán a main.py-t szeretnéd tuttatni, ott ezeknek abban a mappában kell lennie ahol a main.py van. (linuxon sima ffmpeg és ffprobe bináris van)
 
 (Az Installer az Inno Setup Compiler nevű szoftverrel készült)
 
@@ -70,7 +70,7 @@ ffmpeg.exe és az ffprobe.exe fájlokat!
 
 ## Használat
 
-1. Indítsd el a programot (`ZVidDown.exe` vagy a telepítő által létrehozott parancsikonnal).
+1. Indítsd el a programot (`ZVidDown.exe` vagy a telepítő által létrehozott parancsikonnal). Vagy futtasd az AppImage fájlt
 2. Illeszd be a letölteni kívánt videó URL-jét.
 3. Válaszd ki a letöltési módot (videó+hang, csak hang, csak videó).
 4. Válaszd ki a felbontást (ha elérhető).
@@ -108,3 +108,9 @@ A 'more_laungages.json' akár önnállóan is bővíthető.
 - A nyelvi rendszer és a more_languages.json minden új felület- és üzenetelemre kiterjed.
 
 **Készítette: Gódor Zoárd a ZLockCore fejlesztője**
+
+**Elérhetőséhek problémák jelentésére:**
+
+Github beépített problémajelentő rendszere
+Email: zoard.godor@gmail.com
+Github: zoardgodor

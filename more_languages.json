@@ -63,7 +63,8 @@
     "target_resolution": "Target resolution (e.g. 1280x720):",
     "audio_bitrate": "Audio bitrate:",
     "no_audio": "No audio or unknown",
-    "progress": "Progress"
+    "progress": "Progress",
+    "fps_too_high": "The given FPS is higher than the current FPS!"
   },
   "hu": {
       "current_fps": "Jelenlegi FPS:",
@@ -129,7 +130,8 @@
     "target_resolution": "Cél felbontás (pl. 1280x720):",
     "audio_bitrate": "Hang bitráta:",
     "no_audio": "Nincs vagy nem ismert",
-    "progress": "Állapot"
+    "progress": "Állapot",
+    "fps_too_high": "A megadott FPS nagyobb, mint a jelenlegi FPS!"
   },
   "de": {
       "current_fps": "Aktuelle FPS:",
@@ -196,7 +198,8 @@
   ,  "target_resolution": "Zielauflösung (z.B. 1280x720):"
   ,  "audio_bitrate": "Audio-Bitrate:"
   ,  "no_audio": "Kein Audio oder unbekannt"
-  ,  "progress": "Fortschritt"
+  ,  "progress": "Fortschritt",
+  "fps_too_high": "Die angegebene FPS ist höher als die aktuelle FPS!"
 
   }
 }

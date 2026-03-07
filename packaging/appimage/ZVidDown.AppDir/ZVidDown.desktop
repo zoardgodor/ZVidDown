@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=ZVidDown
+Comment=A simple, graphical interface video downloader
+Exec=AppRun
+Icon=icon
+Terminal=false
+Categories=Utility;Video;

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+SELF="$(readlink -f "$0")"
+HERE="${SELF%/*}"
+APPDIR="$HERE"
+
+export LD_LIBRARY_PATH="${APPDIR}/ZVidDown/_internal:${LD_LIBRARY_PATH}"
+export QT_PLUGIN_PATH="${APPDIR}/ZVidDown/_internal/plugins"
+
+exec "${APPDIR}/ZVidDown/ZVidDown_linux" "$@"
