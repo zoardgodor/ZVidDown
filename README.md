@@ -107,8 +107,18 @@ The 'more_languages.json' can be expanded independently.
 
 **Created by: Gódor Zoárd, developer of ZLockCore**
 
+<<<<<<< HEAD
 **Contacts for reporting issues:**
 
 GitHub's built-in issue reporting system
 Email: zoard.godor@gmail.com
 GitHub: zoardgodor
+=======
+**Contact details for reporting issues:**
+
+Github's built-in issue reporting system
+
+Email: zoard.godor@gmail.com
+
+Github: zoardgodor
+>>>>>>> e1157d8edbc6f527365cf6e77cb216c8ef6ba754
