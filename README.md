@@ -20,6 +20,12 @@ This is a simple, graphical video downloader application that allows you to down
 - yt-dlp (video downloading)
 - ffmpeg, ffprobe (media processing)
 
+## Screenshots
+
+![Main Window](screenshots/main_window.png)
+
+![Transformer](screenshots/transformer.png)
+
 ## Installation and Running
 
 ### 1. Pre-compiled version (recommended)
@@ -86,6 +92,8 @@ The program supports multiple languages. By default, you can choose between Engl
 
 You can select the language in the three-dot menu (⋮) in the top right corner, under the "Language" menu item. The selected language is saved and remembered after restarting the program.
 
+### Restart the program after you changed the laungage!
+
 ### Adding Your Own or Additional Languages
 
 If you want to add more languages, download the `more_languages.json` file and place it in the folder where `main.py` or `ZVidDown.exe` is located.
@@ -107,18 +115,8 @@ The 'more_languages.json' can be expanded independently.
 
 **Created by: Gódor Zoárd, developer of ZLockCore**
 
-<<<<<<< HEAD
 **Contacts for reporting issues:**
 
 GitHub's built-in issue reporting system
 Email: zoard.godor@gmail.com
 GitHub: zoardgodor
-=======
-**Contact details for reporting issues:**
-
-Github's built-in issue reporting system
-
-Email: zoard.godor@gmail.com
-
-Github: zoardgodor
->>>>>>> e1157d8edbc6f527365cf6e77cb216c8ef6ba754

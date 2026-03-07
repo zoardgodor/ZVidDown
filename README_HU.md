@@ -21,6 +21,12 @@ oldalról tölthetsz le videót, hangot vagy csak videót.
 - yt-dlp (videóletöltés)
 - ffmpeg, ffprobe (médiafeldolgozás)
 
+## Képernyőképek
+
+![Fő ablak](screenshots/main_window.png)
+
+![Átváltó](screenshots/transformer.png)
+
 ## Telepítés és futtatás
 
 ### 1. Előre lefordított verzió (ajánlott)
@@ -87,6 +93,8 @@ A PROGRAM TELEPÍTÉSÉVEL ÉS HASZNÁLATÁVAL ELOGADJA A LICENCSZERZŐDÉST.
 A program több nyelvet is támogat. Alapértelmezés szerint angol és magyar nyelv közül lehet választani.
 
 Nyelvet a jobb felső sarokban található hárompontos (⋮) menüben, a "Language" menüpont alatt lehet választani. A kiválasztott nyelv elmentésre kerül, és a program újraindítás után is megjegyzi.
+
+### Indísd újra a programot miután nyelvet változtattál!
 
 ### Saját vagy további nyelvek hozzáadása
 
