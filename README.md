@@ -115,8 +115,4 @@ The 'more_languages.json' can be expanded independently.
 
 **Created by: Gódor Zoárd, developer of ZLockCore**
 
-**Contacts for reporting issues:**
-
-GitHub's built-in issue reporting system
-Email: zoard.godor@gmail.com
-GitHub: zoardgodor
+**ZVidDown is no longer actively developed, so it may contain bugs!**
