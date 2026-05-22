@@ -14,6 +14,9 @@ class FFToolsManager:
     
     def __init__(self):
         self.tool_paths = self._get_tool_paths()
+
+    def refresh_tool_paths(self):
+        self.tool_paths = self._get_tool_paths()
     
     @staticmethod
     def _get_tool_paths():

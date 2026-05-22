@@ -12,6 +12,7 @@ This is a simple, graphical video downloader application that allows you to down
 - Download progress indication
 - Built-in converter: convert existing audio and video files to other formats, quality, FPS (bitrate, resolution, etc.)
 - Wide website support
+- Automatic update workflow for the app, ffmpeg and Python packages
 
 ## Technologies
 
@@ -105,6 +106,8 @@ The 'more_languages.json' can be expanded independently.
 
 ## Additional Features
 - Built-in converter: convert audio and video files to different formats (mp3, ogg, m4a, mp4, mkv, etc.), with options for audio bitrate and video resolution, status bar, and multilingual interface. Also includes FPS changer.
+- The `Updates` menu can run update maintenance manually at any time.
+- On startup, the app can automatically update the packaged application from GitHub Releases, bundled `ffmpeg` / `ffprobe` on Windows from gyan.dev, and pip packages when the project is run from source with Python.
 
 - Before downloading, you must manually select video and audio quality. If either is not selected, a window appears with two options: OK (cancels download) or Continue with default values (downloads bestvideo+bestaudio).
 - Audio quality (bitrate/format) can also be selected separately, not just video resolution.
@@ -115,9 +118,4 @@ The 'more_languages.json' can be expanded independently.
 
 **Created by: Gódor Zoárd, developer of ZLockCore**
 
-**Contact information for reporting issues**
-
-GitHub's built-in issue tracking system
-Email: zoard.godor@gmail.com
-Github: zoardgodor
-
+This project is no longer under development. It may contain Bugs.

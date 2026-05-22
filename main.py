@@ -5,10 +5,13 @@ from PySide6.QtWidgets import QApplication
 from core.translations import TranslationManager
 from config.config import get_config
 from ui.main_window import MainWindow
+from core.version import APP_NAME, APP_VERSION
 
 
 def main():
     app = QApplication(sys.argv)
+    app.setApplicationName(APP_NAME)
+    app.setApplicationVersion(APP_VERSION)
     
     translations = TranslationManager()
     config = get_config()

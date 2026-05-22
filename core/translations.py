@@ -73,7 +73,14 @@ class TranslationManager:
                 "target_resolution": "Cél felbontás (pl. 1280x720):",
                 "audio_bitrate": "Hang bitráta:",
                 "no_audio": "Nincs vagy nem ismert",
-                "progress": "Állapot"
+                "progress": "Állapot",
+                "updates": "Frissítések",
+                "check_updates_now": "Frissítés indítása most",
+                "current_version": "Jelenlegi verzió: {version}",
+                "checking_updates": "Frissítések ellenőrzése...",
+                "updates_finished": "Frissítések ellenőrzése kész.",
+                "restart_required": "A frissítés befejezéséhez az alkalmazás újraindul.",
+                "no_updates_needed": "Nem volt szükség frissítésre."
             },
             'en': {
                 'title': 'Video Downloader',
@@ -140,7 +147,14 @@ class TranslationManager:
                 "target_resolution": "Target resolution (e.g. 1280x720):",
                 "audio_bitrate": "Audio bitrate:",
                 "no_audio": "No audio or unknown",
-                "progress": "Progress"
+                "progress": "Progress",
+                "updates": "Updates",
+                "check_updates_now": "Run updates now",
+                "current_version": "Current version: {version}",
+                "checking_updates": "Checking for updates...",
+                "updates_finished": "Update check finished.",
+                "restart_required": "The application will restart to finish the update.",
+                "no_updates_needed": "Everything is already up to date."
             }
         }
         self._load_more_languages()
